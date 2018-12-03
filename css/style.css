@@ -1,0 +1,152 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Permanent Marker', cursive;
+    box-sizing: border-box;
+}
+/* Map & fromulaire */
+.map,
+.formulaire{
+    float:left;
+    overflow:hidden;
+}
+
+/* Map */
+.map{
+    width:60%;
+    height:100vh;
+    border:0px;
+}
+
+iframe{
+    width:100%;
+    height:100vh;
+    border:0px;
+}
+
+/* Formulaire */
+.formulaire{
+    overflow: auto;
+    width:40%;
+    height:100vh;
+    -webkit-box-shadow: -7px 0px 21px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: -7px 0px 21px 0px rgba(0,0,0,0.47);
+    box-shadow: -7px 0px 21px 0px rgba(0,0,0,0.47);
+}
+
+/* block champs */
+.formulaire fieldset{
+   border:0px;
+   padding:30px;
+   margin:20px;
+}
+
+/* Titre Formulaire */
+legend{
+    margin-top:20px;
+    display: block;
+    width: 100%;
+    font-weight:Bold;
+    font-size: 39px;
+    color:#ed9010;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.formulaire fieldset .input-feild{
+    margin:20px 0;
+    margin-bottom:50px;
+}
+
+/* block label */
+.formulaire fieldset label{
+   display:block;
+   color:#999999;
+   font-weight:bold;
+}
+
+/* input & textarea */
+.formulaire fieldset input[type="text"],
+.formulaire textarea{
+    width:100%;
+    color: #555555;
+    background-color:transparent;
+    border:0px;
+    border-bottom:1px dashed #ed9010;
+    font-size:18px;
+}
+
+/* input */
+.formulaire fieldset input[type="text"]{
+    margin-top:10px;
+    height:30px;
+}
+
+/* textarea */
+.formulaire textarea {
+    margin-top:20px;
+    height:80px;
+}
+
+/* input & textarea focus */
+.formulaire fieldset input[type="text"]:focus,
+.formulaire textarea:focus {
+   border-bottom:2px solid #ed9010;
+}
+
+/* input & textarea placeholder */
+.formulaire fieldset input[type="text"]::placeholder,
+.formulaire textarea::placeholder {
+    color: #ccc;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* button */
+button[type="submit"]{
+    border:0px;
+    border-radius:50px;
+    padding:10px 20px;
+    width:100%;
+    font-size:18px;
+}
+
+/* button hover */
+button[type="submit"]:hover{
+    background-color:#ed9010;;
+    color:white;
+}
+
+/* checkbox */
+input[type="checkbox"]{
+    width:25px;
+    height:25px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+
+/* responsive 740px */
+@media screen and (max-width:740px){
+    .formulaire fieldset{
+        border:0px;
+        padding:10px;
+        margin:10px;
+    }
+    .map{
+        width:50%;
+    }
+    .formulaire{
+        width:50%;
+    }
+}
+
+/* responsive 490px */
+@media screen and (max-width:490px){
+    .map{
+        width:100%;
+        height:300px;
+    }
+    .formulaire{
+        width:100%;
+    }
+
+}

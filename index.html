@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Contact HTML</title>
+
+        <!-- Typo -->
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+
+        <!-- Style -->
+        <link href="css/style.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <!-- Map -->
+        <div class="map" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.092762842361!2d4.457216715650975!3d50.42074329738621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2261bd787a80f%3A0x68cd1e16a7f40621!2sColl%C3%A8ge+Technique+des+Aum%C3%B4niers+du+Travail!5e0!3m2!1sfr!2sbe!4v1542550059516"
+             allowfullscreen>
+            <p>Votre navigateur ne supporte pas les iframes.</p>
+            </iframe>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="formulaire" >
+            <form action="#" method="GET">
+                <div class="test">
+                    <fieldset>
+                        <legend>Contactez-nous</legend>
+
+                        <!-- Champs nom -->
+                        <div class="input-feild">
+                            <label for="nom" >Nom</label>
+                            <input type="text" name="nom" id="nom" placeholder="votre nom">
+                        </div>
+
+                        <!-- Champs email -->
+                        <div class="input-feild">
+                            <label for="email" >Email</label>
+                            <input type="text" name="email" id="email" placeholder="votre email">
+                        </div>
+
+                        <!-- Champs message -->
+                        <div class="input-feild">
+                            <label for="message" >Message</label>
+                            <textarea name="message" id="message" placeholder="votre message"></textarea>
+                        </div>
+
+                        <!-- Champs newsletter -->
+                        <div class="input-feild">
+                            <input type="checkbox" name="newsletter" id="newsletter" value=""><lable for="newsletter">S'inscrire à la newsletter</lable>
+                        </div>
+
+                        <!-- boutton envoyer -->
+                        <div class="input-feild">
+                            <button type="submit" id="send" name="send" >Envoyer</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+        </div>
+    </body>
+</html>
